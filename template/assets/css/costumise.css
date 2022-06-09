@@ -16,7 +16,7 @@
     background-clip: border-box;
     border: 1px solid #d2d2dc;
     border-radius: 0;
-    width: 80%;
+    
     
 }
 
@@ -77,11 +77,5 @@ label.check input:checked + span {
     width: 40%;
     display: flex;
     justify-content:flex-start;
-    
-}
-.card-2 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
     
 }
