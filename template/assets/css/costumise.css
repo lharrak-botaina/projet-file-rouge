@@ -1,0 +1,87 @@
+.mt-100 {
+    margin-top: 100px
+}
+
+.mb-30{
+  margin-bottom: 30px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #d2d2dc;
+    border-radius: 0;
+    width: 80%;
+    
+}
+
+.card .card-body {
+    padding: 1.25rem 1.75rem
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+
+.card .card-title {
+    color: #000000;
+    margin-bottom: 0.625rem;
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    font-weight: 500
+}
+
+.card .card-description {
+    margin-bottom: .875rem;
+    font-weight: 400;
+    color: #76838f
+}
+
+p {
+    font-size: 0.875rem;
+    margin-bottom: .5rem;
+    line-height: 1.5rem
+}
+
+
+label.check {
+  cursor: pointer;
+}
+label.check input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+label.check span {
+  padding: 7px 14px;
+    border: 2px solid #c7a254;
+    display: inline-block;
+    color: #c7a254;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+label.check input:checked + span {
+  border-color: #c7a254;
+    background-color: #c7a254;
+    color: #fff;
+}
+.imag_categorie {
+    width: 40%;
+    display: flex;
+    justify-content:flex-start;
+    
+}
+.card-2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}

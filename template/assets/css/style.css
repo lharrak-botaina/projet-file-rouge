@@ -93,7 +93,7 @@ section {
 }
 
 img {
-  max-width: 100%;
+  max-width: 35%;
 }
 
 /*-------------------------
@@ -6942,6 +6942,8 @@ textarea.form-control {
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
     max-width: 50%;
+    
   }
 }
 /*# sourceMappingURL=style.css.map */
+
