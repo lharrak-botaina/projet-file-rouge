@@ -4,7 +4,8 @@
 use App\Http\Controllers\IngredientsController;
 use App\Http\Controllers\Controller;
 use Database\Factories\IngredientFactory;
-use App\Http\Controllers\PlaceController;
+use App\Http\Controllers\CategorieController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,9 +19,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/inserte-endroit', function () {  
-//     return view('pages.inserte-endroit');
-//     });
+Route::get('/inserte-categorie', function () {  
+    return view('pages.inserte-categorie');
+    });
 // Route::get('/edit-endroit', function () {  
 //     return view('pages.edit-endroit');
 //     });
@@ -33,13 +34,13 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/tableau-endroit', function () {  
 //     return view('pages.tableau-endroit');
 //     });
-// Route::get('/tableau-categorie', function () {  
-//     return view('pages.tableau-categorie');
-//     });
+Route::get('/tableau-categorie', function () {  
+    return view('pages.tableau-categorie');
+    });
 
 
 // route::get('/afficher',[CategorieController::class,'index']);
    
 Route::resource('afficher-ingredient',IngredientsController::class);
-Route::resource('afficher-endroit', PlaceController::class);
+Route::resource('afficher-categorie', CategorieController::class);
 
