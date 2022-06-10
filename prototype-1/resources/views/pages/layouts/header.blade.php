@@ -52,7 +52,7 @@
                     </a>
                     <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('afficher-categorie.create')}}">Ajouter endroit</a>
+                                    <a class="nav-link" href="{{route('afficher-categorie.create')}}">Ajouter ingredient</a>
                                     <a class="nav-link" href="{{route('afficher-ingredient.create')}}">Ajouter categorie</a>
                                 </nav>
                                

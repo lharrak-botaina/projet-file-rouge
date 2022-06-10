@@ -10,7 +10,7 @@
     <!-- MAIN CONTENT-->
     <div class="main-content">
         <h1 class="titre text-center ">
-            <strong>MODIFIER ENDROIT</strong>
+            <strong>MODIFIER CATEGORIE</strong>
         </h1>
         <div class="section__content section__content--p30">
             <div class="container-fluid">
