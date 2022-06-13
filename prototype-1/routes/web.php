@@ -18,6 +18,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/index', function () {  
+    return view('index');
+    });
+Route::get('/checkbox', function () {  
+return view('checkbox');
+});
+ Route::get('/recette', function () {  
+ return view('recette');
+});
+
+
 
 Route::get('/inserte-categorie', function () {  
     return view('pages.inserte-categorie');
