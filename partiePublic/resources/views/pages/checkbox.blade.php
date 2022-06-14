@@ -114,7 +114,7 @@
                           <h4 class="card-title">Custom Checkbox</h4>
                           
                           <hr class="mb-30">
-                        @forelse ($ingrediets as $item)
+                        @forelse ($inredients as $item)
                             
                         
                           <label class="check">

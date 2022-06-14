@@ -12,7 +12,6 @@
     href="https://fonts.googleapis.com/css?family=Rubik:400,500,700%7cShadows+Into+Light&display=swap">
   <link rel="stylesheet" href="assets/css/libraries.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/costumise.css">
 </head>
 
 <body>
@@ -31,23 +30,30 @@
             <span class="menu-lines"><span></span></span>
           </button>
           <div class="collapse navbar-collapse" id="mainNavigation">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav__item with-dropdown">
-                  <li class="nav__item"><a href="index.html" class="nav__item-link">Home </a></li>
-                </li><!-- /.nav-item -->
-                <li class="nav__item with-dropdown">
-                  <li class="nav__item"><a href="menu-gallery.html" class="nav__item-link">Menu </a></li>
-                </li><!-- /.nav-item -->
-                <li class="nav__item with-dropdown">
-                    <li class="nav__item"><a href="gallery-grid.html" class="nav__item-link">Gallery</a></li>
-                </li><!-- /.nav-item -->
-                
-                <!-- /.nav-item -->
-              </ul><!-- /.navbar-nav -->
-          </div><!-- /.navbar-collapse -->
-          <div class="navbar-actions-wrap">
             
-          </div><!-- /.navbar-actions-wrap -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav__item with-dropdown">
+                <li class="nav__item"><a href="{{route('afficher-categorie.create')}}"  class="nav__item-link">Home </a></li>
+              </li><!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <li class="nav__item"><a href="menu-gallery.html" class="nav__item-link">Menu </a></li>
+              </li><!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                  <li class="nav__item"><a href="gallery-grid.html" class="nav__item-link">Gallery</a></li>
+              </li><!-- /.nav-item -->
+              
+              <!-- /.nav-item -->
+            </ul><!-- /.navbar-nav -->
+                
+              
+              <!-- /.nav-item -->
+            </ul><!-- /.navbar-nav -->
+          </div><!-- /.navbar-collapse -->
+          
+            
+               
+                  
+               
         </div><!-- /.container -->
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
@@ -55,178 +61,153 @@
     <!-- ========================
        page title 
     =========================== -->
-    <section id="page-title" class="page-title page-title-layout1 text-center bg-overlay bg-overlay-2 bg-parallax">
-      <div class="bg-img"><img src="assets/images/backgrounds/10.jpg" alt="background"></div>
-      <svg class="pagetitle__divider-shape" xmlns="http://www.w3.org/2000/svg" width="22" height="61"
-        viewBox="0 0 22 61">
-        <path
-          d="M799,769h2v61h-2V769Zm8,24.8a0.969,0.969,0,0,0-1.911,0,3.012,3.012,0,0,1-.883,2.16,4.486,4.486,0,0,0,0,6.136,3.083,3.083,0,0,1,0,4.32,4.486,4.486,0,0,0,0,6.136,3.088,3.088,0,0,1,0,4.325,4.5,4.5,0,0,0,0,6.142,3.014,3.014,0,0,1,.884,2.163,0.969,0.969,0,0,0,1.911,0,4.414,4.414,0,0,0-1.213-3.07,3.091,3.091,0,0,1,0-4.328,4.491,4.491,0,0,0,0-6.14,3.08,3.08,0,0,1,0-4.319,4.488,4.488,0,0,0,0-6.137,3.081,3.081,0,0,1,0-4.32A4.407,4.407,0,0,0,807,793.8Zm0-20a0.969,0.969,0,0,0-1.911,0,3.014,3.014,0,0,1-.883,2.16,4.486,4.486,0,0,0,0,6.136,3.083,3.083,0,0,1,0,4.32,4.488,4.488,0,0,0,0,6.137,3.087,3.087,0,0,1,0,4.324,4.5,4.5,0,0,0,0,6.142,3.014,3.014,0,0,1,.884,2.163,0.969,0.969,0,0,0,1.911,0,4.414,4.414,0,0,0-1.213-3.07,3.089,3.089,0,0,1,0-4.327,4.491,4.491,0,0,0,0-6.14,3.081,3.081,0,0,1,0-4.32,4.488,4.488,0,0,0,0-6.137,3.081,3.081,0,0,1,0-4.32A4.409,4.409,0,0,0,807,773.8ZM793,793.8a0.969,0.969,0,0,1,1.911,0,3.012,3.012,0,0,0,.883,2.16,4.486,4.486,0,0,1,0,6.136,3.083,3.083,0,0,0,0,4.32,4.486,4.486,0,0,1,0,6.136,3.088,3.088,0,0,0,0,4.325,4.5,4.5,0,0,1,0,6.142,3.014,3.014,0,0,0-.884,2.163,0.969,0.969,0,0,1-1.911,0,4.414,4.414,0,0,1,1.213-3.07,3.091,3.091,0,0,0,0-4.328,4.491,4.491,0,0,1,0-6.14,3.08,3.08,0,0,0,0-4.319,4.488,4.488,0,0,1,0-6.137,3.081,3.081,0,0,0,0-4.32A4.407,4.407,0,0,1,793,793.8Zm0-20a0.969,0.969,0,0,1,1.911,0,3.014,3.014,0,0,0,.883,2.16,4.486,4.486,0,0,1,0,6.136,3.083,3.083,0,0,0,0,4.32,4.488,4.488,0,0,1,0,6.137,3.087,3.087,0,0,0,0,4.324,4.5,4.5,0,0,1,0,6.142,3.014,3.014,0,0,0-.884,2.163,0.969,0.969,0,0,1-1.911,0,4.414,4.414,0,0,1,1.213-3.07,3.089,3.089,0,0,0,0-4.327,4.491,4.491,0,0,1,0-6.14,3.081,3.081,0,0,0,0-4.32,4.488,4.488,0,0,1,0-6.137,3.081,3.081,0,0,0,0-4.32A4.409,4.409,0,0,1,793,773.8Zm-4,5.2h2v41h-2V779Zm20,0h2v41h-2V779Z"
-          transform="translate(-789 -769)"></path>
-      </svg>
+    <section id="page-title" class="page-title page-title-layout14 bg-overlay bg-overlay-2">
+      <div class="bg-img"><img src="assets/images/backgrounds/3.jpg" alt="background"></div>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <span class="pagetitle__subheading">Get In Toutch</span>
-            <h1 class="pagetitle__heading">Contact Us</h1>
+            <h1 class="pagetitle__heading">Single Product</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Single Product</li>
+              </ol>
+            </nav>
           </div><!-- /.col-lg-12 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- /.page-title -->
 
-    <!-- ==========================
-       Map
+    <!-- ========================
+       product single
     =========================== -->
-    
+    <section id="productSingle" class="shop product-single pb-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="alert-panel d-flex align-items-center justify-content-between">
+              <div class="alert__content">
+                <h6 class="alert__title">“Grilled American Fillet” has been added to your cart.</h6>
+              </div><!-- /.alert__content-->
+              
+            </div><!-- /.alert-panel-->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="product__single-img">
+              <img src="assets/images/shop/full/1.jpg" class="zoomin" alt="product">
+            </div><!-- /.product-img -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <h4 class="product__title">Grilled American Fillet</h4>
+            
+            <hr class="hr-dashed mt-30 mb-30">
+            <div class="product__desc">
+              <p>We’ve all been dying to know which type of magic the Gaines would bring to the café, a landmark on
+                Waco’s bustling traffic circle that closed down in February of 2016. The Fixer Upper stars’ Magnolia
+                brand, which includes the Magnolia Market, a premium interior paint line, and a quarterly home.</p>
+            </div><!-- /.product-desc -->
+            <form class="product__form-wrap mb-30">
+              <div class="product__quantity d-flex">
+                
+                
+              </div><!-- /.product-quantity -->
+            </form>
+            <div class="product__meta">
+              <div class="product__meta-cat">
+                <span class="product__meta-title">Categories:</span>
+                <a href="#">Main</a>
+                <a href="#">Dinner</a>
+              </div><!-- /.product__meta-cat -->
+              <div class="product__meta-tags">
+                <span class="product__meta-title">Tags:</span>
+                <a href="#">Light</a>
+                <a href="#">Mexican</a>
+                <a href="#">Organic</a>
+              </div><!-- /.product__meta-tags -->
+            </div><!-- /.product__meta -->
+            <hr class="hr-dashed mt-30 mb-30">
+            <div class="product__share d-flex align-items-center">
+              <h6 class="product__share-title mb-0 mr-20">share:</h6>
+              <ul class="social__icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div><!-- /.product-share -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1">
+            <div class="product__tabs mt-90">
+              <nav class="nav nav-tabs justify-content-center">
+                <a class="nav__link active" data-toggle="tab" href="#Description">Description</a>
+                <a class="nav__link" data-toggle="tab" href="#Details">Additional Information</a>
+                <a class="nav__link" data-toggle="tab" href="#Reviews">Reviews (0)</a>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="Description">
+                  <p>The restaurant itself is literally one big giant kitchen. When we first got in there, it was all
+                    the things you can imagine—dingy, musky. But if I took you in there today, you’d be like ‘Oh! This
+                    is so clean, everything smells so great.’ Those are a few benefits of a little bit of elbow grease
+                    and hard work on the front end.” As Chip’s vision has come to fruition, he’s garnered a lot more
+                    support. We’ve all been dying to know which type of magic the Gaines would bring to the café, a
+                    landmark on Waco’s bustling traffic circle.</p>
+                </div><!-- /.desc-tab -->
+                <div class="tab-pane fade" id="Details">
+                  <p>The restaurant itself is literally one big giant kitchen. When we first got in there, it was all
+                    the things you can imagine—dingy, musky. But if I took you in there today, you’d be like ‘Oh! This
+                    is so clean, everything smells so great.’ Those are a few benefits of a little bit of elbow grease
+                    and hard work on the front end.” As Chip’s vision has come to fruition, he’s garnered a lot more
+                    support. We’ve all been dying to know which type of magic the Gaines would bring to the café, a
+                    landmark on Waco’s bustling traffic circle.</p>
+                  <p>The restaurant itself is literally one big giant kitchen. When we first got in there, it was all
+                    the things you can imagine—dingy, musky. But if I took you in there today, you’d be like ‘Oh! This
+                    is so clean, everything smells so great.’ Those are a few benefits of a little bit of elbow grease
+                    and hard work on the front end.” As Chip’s vision has come to fruition, he’s garnered a lot more
+                    support. We’ve all been dying to know which type of magic the Gaines would bring to the café, a
+                    landmark on Waco’s bustling traffic circle.</p>
+                </div><!-- /.details-tab -->
+                <div class="tab-pane fade" id="Reviews">
+                  <form class="row reviews__form">
+                    <div class="col-sm-6 form-group">
+                      <label for="reviewerName">Name</label>
+                      <input id="reviewerName" type="text" class="form-control">
+                    </div><!-- /.form-group -->
+                    <div class="col-sm-6 form-group">
+                      <label for="reviewerEmail">Email</label>
+                      <input id="reviewerEmail" type="text" class="form-control">
+                    </div><!-- /.form-group -->
+                    <div class="col-sm-12 form-group">
+                      <label for="reviewerReview">Review</label>
+                      <textarea id="reviewerReview" class="form-control"></textarea>
+                    </div><!-- /.form-group -->
+                    <div class="col-sm-12">
+                      <button type="submit" class="btn btn__primary">Submit</button>
+                    </div>
+                  </form>
+                </div><!-- /.reviews-tab -->
+              </div>
+            </div><!-- /.product-tabs -->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.product single -->
 
-    <!-- ==========================
-        contact 1
+    <!-- ========================
+      Related products
     =========================== -->
-    <section id="contact" class="contact">
-      
-          <div class="row d-flex justify-content-center mt-100">
-                  <div class="col-md-4">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <div class="imag_categorie">
-                          <img src="assets/images/categorie/categorie1.png" alt="">
-                        </div>
-                        <h4 class="card-title">Custom Checkbox </h4>
-                        <hr class="mb-30">
-                        <label class="check">
-                          <input type="checkbox" checked>
-                          <span>HTML</span>
-                        </label>
-                        <label class="check">
-                          <input type="checkbox">
-                          <span>CSS</span>
-                        </label>
-                      </div>
-                    </div>
-
-                  </div>
-                    <div class="col-md-4">
-                      <div class="card">
-                        <div class="card-body text-center">
-                          <div class="imag_categorie">
-                            <img src="assets/images/categorie/categorie2.png" alt="">
-
-                          </div>
-                          <h4 class="card-title">Custom Checkbox</h4>
-                          
-                          <hr class="mb-30">
-                        @forelse ($ingrediets as $item)
-                            
-                        
-                          <label class="check">
-                            <input type="checkbox"
-                            name="ingredient[]">
-                        <span >{{$item->name}}</span>
-                          </label>
-                          @empty
-                            
-                          @endforelse
-                        </div>
-                     </div>
-                    </div>
-          </div>
-          <div class="row d-flex justify-content-center mt-100">
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <div class="imag_categorie">
-                    <img src="assets/images/categorie/categorie3.png" alt="">
-                  </div>
-                  <h4 class="card-title">Custom Checkbox </h4>
-                  <hr class="mb-30">
-                  <label class="check">
-                    <input type="checkbox" checked>
-                    <span>HTML</span>
-                  </label>
-                  <label class="check">
-                    <input type="checkbox">
-                    <span>CSS</span>
-                  </label>
-                </div>
-              </div>
-
-            </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <div class="imag_categorie">
-                      <img src="assets/images/categorie/categorie4.png" alt="">
-
-                    </div>
-                    <h4 class="card-title">Custom Checkbox</h4>
-                    
-                    <hr class="mb-30">
-                    <label class="check">
-                      <input type="checkbox">
-                      <span>JAVASCRIPT</span>
-                    </label>
-                    <label class="check">
-                      <input type="checkbox">
-                      <span>JAVA</span>
-                    </label>
-                  </div>
-               </div>
-              </div>
-            </div>
-            <div class="row d-flex justify-content-center mt-100">
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="card-body text-center">
-                    <div class="imag_categorie">
-                      <img src="assets/images/categorie/categorie5.png" alt="">
-                    </div>
-                    <h4 class="card-title">Custom Checkbox </h4>
-                    <hr class="mb-30">
-                    <label class="check">
-                      <input type="checkbox" checked>
-                      <span>HTML</span>
-                    </label>
-                    <label class="check">
-                      <input type="checkbox">
-                      <span>CSS</span>
-                    </label>
-                  </div>
-                </div>
-
-              </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <div class="card-body text-center">
-                      <div class="imag_categorie">
-                        <img src="assets/images/categorie/categorie6.png" alt="">
-
-                      </div>
-                      <h4 class="card-title">Custom Checkbox</h4>
-                      
-                      <hr class="mb-30">
-                      <label class="check">
-                        <input type="checkbox">
-                        <span>JAVASCRIPT</span>
-                      </label>
-                      <label class="check">
-                        <input type="checkbox">
-                        <span>JAVA</span>
-                      </label>
-                    </div>
-                 </div>
-                </div>
-      </div>
-
-
-              
-    </div>
+    <section id="related-products" class="relted-products text-center pt-80 pb-40">
+      <div class="container">
+        <div class="row">
+          
         
-              
-        
-        
-        
-              
-        
-    </section><!-- /.contact 1 -->
+               
+          
+            
+    </section><!-- /.related-products -->
 
     <!-- ========================
       Footer

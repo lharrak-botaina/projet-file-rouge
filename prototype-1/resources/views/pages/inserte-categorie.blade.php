@@ -32,11 +32,11 @@
                                                 <span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
                                             </div>
                                         </div>
-                                        {{-- <div class="col-6">
+                                         <div class="col-6">
                                             <label for="cc-exp" class="control-label mb-1">ingredient</label>
                                             <select name="id_ingredient" id="select" class="form-control">                                    
                                             <option selected>Select category</option>
-                                             @forelse ($categorie as $value)
+                                             @forelse ($ingredient as $value)
                                                  
                                               <option value="{{$value->id_ingredient}}">{{$value->name_ingredient}} </option>
           
@@ -46,7 +46,7 @@
                                               @endforelse
                                             </select>
                                             <span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
-                                        </div> --}}
+                                        </div>
                                         
                                         
                                         

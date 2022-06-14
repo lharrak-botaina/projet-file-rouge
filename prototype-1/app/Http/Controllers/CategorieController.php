@@ -17,7 +17,9 @@ class CategorieController extends Controller
 
         $categorie = DB::table('categorie')
         ->select("*")
+        // ->join("ingredients","categorie.id_categorie_ingredients","=","ingredients.id_ingredient")
         ->get();
+        
         return view('pages.tableau-categorie' , compact('categorie'));
       
        
@@ -31,12 +33,12 @@ class CategorieController extends Controller
      */
     public function create()
     {
-        return view('pages.inserte-categorie');
-        // $categorie =DB::table('categories')
-        // ->select('name')
-        // ->get();
+     
+        $ingredient =DB::table('ingredients')
+        ->select('*')
+        ->get();
 
-        // return view('pages.inserte-categorie', compact('categorie'));
+        return view('pages.inserte-categorie', compact('ingredient'));
         
     }
 
@@ -50,10 +52,10 @@ class CategorieController extends Controller
     {
         $name_categorie = $request->input('name_categorie');
         
-        // $id_categorie= $request->input('id_categorie');
+        $id_ingredient= $request->input('id_ingredient');
       
         
-         $inserte = DB::insert('insert into categorie(name) value(?)',[$name_categorie]);
+         $inserte = DB::insert('insert into categorie(name,id_categorie_ingredients) value(?,?)',[$name_categorie,$id_ingredient]);
          if($inserte){
           return redirect('afficher-categorie');
           
