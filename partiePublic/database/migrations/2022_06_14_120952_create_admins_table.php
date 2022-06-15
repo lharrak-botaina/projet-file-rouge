@@ -13,50 +13,63 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ingredients', function (Blueprint $table) {
-            $table->increments("id_ingredient")->nullable();
-            $table->string('name_ingredient')->nullable();
-            $table->string('photo_ingredient')->nullable();
-            
+        Schema::create('categories', function (Blueprint $table) {
+            $table->increments("id_categorie");
+            $table->string('nom_categorie')->nullable();
+            $table->string('description_categorie')->nullable();
+            $table->string('photo_categorie')->nullable();
             $table->timestamps();
 
         });
-        Schema::create('categorie', function (Blueprint $table) {
-            $table->increments("id")->nullable();
-            $table->string("name")->nullable();
-            
-            
-        });
-      
+        Schema::create('categories_exerices', function (Blueprint $table) {
+            $table->increments("id_categorie_exercice");
+            $table->string('nom_categorie_exercice')->nullable();
+            $table->string('photo_categorie_exercice')->nullable();
+            $table->timestamps();
 
-        Schema::create('recettes', function (Blueprint $table) {
-            $table->increments("id_recette")->nullable();
-            $table->string('nom_recette')->nullable();
-            $table->string('photo_recette')->nullable();
-            $table->string('video_place')->nullable();
-            $table->string('description_recette')->nullable();
-           
-            $table->unsignedInteger("id_ingredient_recette")->nullable(); //Unique key
-            $table->foreign('id_ingredient_recette')
-            ->references('id_ingredient')
-            ->on('ingredients')
-            ->onDelete('cascade');
-            
         });
-        Schema::create('ingredients_recettes', function (Blueprint $table) {
-            
+        Schema::create('exercices', function (Blueprint $table) {
+            $table->increments("id_exercice")->nullable();
+            $table->string('nom_exercice')->nullable();
+            $table->unsignedInteger('categorie_exercice')->nullable();
+            $table->string('description_exercice')->nullable();
+            $table->string('repetition_exercice')->nullable();
+            $table->string('photo_exercice')->nullable();
+            $table->foreign('categorie_exercice')
+            ->references('id_categorie_exercice')
+            ->on('categories_exerices')
+            ->onDelete('cascade');
+            $table->timestamps();
+
+        });
+
+        Schema::create('jours', function (Blueprint $table) {
+            $table->increments("id_jour")->nullable();
+            $table->string('jour')->nullable();        
+            $table->string('description_jour')->nullable();        
+            $table->timestamps();
            
-            $table->unsignedInteger("id_recette")->nullable(); //Unique key
-            $table->foreign('id_recette')
-            ->references('id_recette')
-            ->on('recettes')
+           
+
+        });
+        Schema::create('exercices_de_jours', function (Blueprint $table) {
+            $table->string('id_programme')->nullable();        
+            $table->unsignedInteger("categorie_id")->nullable();     
+            $table->unsignedInteger("jour_id")->nullable();
+            $table->unsignedInteger("exercice_id")->nullable();
+            $table->timestamps();
+            $table->foreign('categorie_id')
+            ->references('id_categorie')
+            ->on('categories')
             ->onDelete('cascade');
-            $table->unsignedInteger("id_ingredient")->nullable(); //Unique key
-            $table->foreign('id_ingredient')
-            ->references('id_ingredient')
-            ->on('ingredients')
+            $table->foreign('jour_id')
+            ->references('id_jour')
+            ->on('jours')
             ->onDelete('cascade');
-            
+            $table->foreign('exercice_id')
+            ->references('id_exercice')
+            ->on('exercices')
+            ->onDelete('cascade');
         });
     }
 

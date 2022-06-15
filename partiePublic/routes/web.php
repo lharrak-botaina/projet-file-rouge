@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\CategorieController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/checkbox', function () {
-    return view('pages.checkbox');
-});
+// Route::get('/checkbox', function () {
+//     return view('pages.checkbox');
+// });
 
+route::get('/checkbox',[CategorieController::class,'afficher_categories']);

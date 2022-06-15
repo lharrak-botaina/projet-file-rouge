@@ -84,50 +84,34 @@
     <section id="contact" class="contact">
       
           <div class="row d-flex justify-content-center mt-100">
-                  <div class="col-md-4">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <div class="imag_categorie">
-                          <img src="assets/images/categorie/categorie1.png" alt="">
-                        </div>
-                        <h4 class="card-title">Custom Checkbox </h4>
-                        <hr class="mb-30">
-                        <label class="check">
-                          <input type="checkbox" checked>
-                          <span>HTML</span>
-                        </label>
-                        <label class="check">
-                          <input type="checkbox">
-                          <span>CSS</span>
-                        </label>
-                      </div>
-                    </div>
-
-                  </div>
-                    <div class="col-md-4">
+            @forelse ($programme as $item)
+                  
+            <div class="col-md-4">
                       <div class="card">
                         <div class="card-body text-center">
                           <div class="imag_categorie">
                             <img src="assets/images/categorie/categorie2.png" alt="">
 
                           </div>
-                          <h4 class="card-title">Custom Checkbox</h4>
+                          <h4 class="card-title">{{$item->jour}}</h4>
                           
                           <hr class="mb-30">
-                        @forelse ($inredients as $item)
                             
                         
                           <label class="check">
                             <input type="checkbox"
                             name="ingredient[]">
-                        <span >{{$item->name}}</span>
+                          <h4 class="card-title"></h4>
+                          <span  >{{$item->nom_exercice}}</span>
+                          
                           </label>
-                          @empty
-                            
-                          @endforelse
+                       
                         </div>
-                     </div>
+                      </div>
                     </div>
+                    @empty
+                      
+                    @endforelse
           </div>
           <div class="row d-flex justify-content-center mt-100">
             <div class="col-md-4">
