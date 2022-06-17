@@ -38,25 +38,14 @@ class ingredient_recetteController extends Controller
         $checkbox=$request->input("ingredients");
 
         $recettes = DB::table("ingredients_recettes")
-
-        // ->join('recettes', 'ingredients_recettes.id_recette', '=', 'recettes.id_recette')
         ->select("*")
         ->where('ingredients_recettes.id_ingredient',$checkbox)
-        // ->orWhere('ingredients_recettes.id_ingredient', ">",$checkbox)
-        ->join('ingredients','ingredients_recettes.id_ingredient', '=', 'ingredients.id_ingredient')
+        // ->orWhere('ingredients_recettes.id_ingredient', '<',"ingredients_recettes.id_ingredient")
+        ->join('ingredients', 'ingredients_recettes.id_ingredient', '=', 'ingredients.id_ingredient')
         ->join('recettes', 'ingredients_recettes.id_recette', '=', 'recettes.id_recette')
         ->get();
-        
-    
-        // if('ingredients_recettes.id_ingredient'=>$checkbox){
-        // ->join('ingredients', 'ingredients_recettes.id_ingredient', '=', 'ingredients.id_ingredient')
-        // ->join('recettes', 'ingredients_recettes.id_recette', '=', 'recettes.id_recette')
-        // ->get();
-        // }
-        // else(){
-        // 'try again'
-        // }
-        
+
+
 
         return view("pages.recettes",compact("recettes"));
 

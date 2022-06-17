@@ -19,9 +19,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/index', function () {
+    return view('pages.index');
+});
 
 
-
-route::resource("index",IngredientController::class);
+route::resource("ingredients",IngredientController::class);
 route::resource("recette",ingredient_recetteController::class);
-route::resource("stock",StockageController::class);
+// route::resource("stock",StockageController::class);
