@@ -7,12 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="Babette">
   <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>Babette</title>
+  <title>Cooking</title>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Rubik:400,500,700%7cShadows+Into+Light&display=swap">
   <link rel="stylesheet" href="assets/css/libraries.css" />
   <!-- <link rel="stylesheet" href="assets/css/animate.css" /> -->
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="costumise.css">
 </head>
 
 <body>
@@ -75,7 +76,7 @@
                 <div class="slide__content">
                   <span class="slide__subtitle">We Offer You</span>
                   <h2 class="slide__title">Fresh Ingredient, Tasty Meals & True Flavour</h2>
-                  <p class="slide__desc">We have awesome recipes and the most talented chefs in town!</p>
+                  <p class="slide__desc">We have awesome recipes !</p>
                   <a href="reservation.html"  class="btn btn__white btn__bordered my-1">Book A Table</a>
                 </div><!-- /.slide-content -->
               </div><!-- /.col-lg-12 -->
@@ -89,8 +90,8 @@
               <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="slide__content">
                   <span class="slide__subtitle">Fresh Ingredient, Tasty Meals</span>
-                  <h2 class="slide__title">Awesome Recipes By <br> The Most Talented Chefs!</h2>
-                  <p class="slide__desc">We have awesome recipes and the most talented chefs in town!</p>
+                  <h2 class="slide__title">Awesome Recipes </h2>
+                  <p class="slide__desc">We have awesome recipes !</p>
                   <a href="reservation.html" class="btn btn__primary mx-2 my-1">Discover Our Menu</a>
                   <a href="menu-classic.html" class="btn btn__white mx-2 my-1">Book A Table</a>
                 </div><!-- /.slide-content -->
@@ -120,7 +121,7 @@
                   <div class="banner__content-text-inner">
                     <div class="heading">
                       <span class="heading__subtitle">Hello Dear</span>
-                      <h2 class="heading__title">Welcome To Babette</h2>
+                      <h2 class="heading__title">Welcome To Cooking</h2>
                       <div class="heading__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                           <path
@@ -128,11 +129,9 @@
                             transform="translate(-505 -925)"></path>
                         </svg>
                       </div>
-                      <p class="heading__desc">Babette was the first restaurant to open in Egypt, the resturant was
-                        designed
-                        with the history in mind we have created a soft industrial dining room, combined with an open
-                        kitchen, coffee take out bar and alovely awesome on site coffee roastery..</p>
-                      <img src="assets/images/about/signature.png" alt="signature">
+                      <p class="heading__desc">Cooking is a web application that acts as an ingredient to recipe reverse search engine. 
+                        It allows you to search for common recipes based on a list of Ingredients that you already have at home...</p>
+                      {{-- <img src="assets/images/about/signature.png" alt="signature"> --}}
                     </div><!-- /.heading -->
                   </div><!-- /.banner__content-text-inner -->
                 </div><!-- /.banner__content-text -->
@@ -165,8 +164,8 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
             <div class="heading heading-white text-center mb-50">
-              <span class="heading__subtitle">Our Favourites</span>
-              <h2 class="heading__title">Discover Our Menu</h2>
+              <span class="heading__subtitle">Our Favourites recipe</span>
+              {{-- <h2 class="heading__title">Discover Our Menu</h2> --}}
             </div><!-- /.heading -->
           </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
@@ -174,7 +173,7 @@
           <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="menu-wrapper">
               <nav class="nav nav-tabs justify-content-center">
-                <a class="nav__link active" data-toggle="tab" href="#tab1">Lunch</a>
+                <a class="nav__link active" data-toggle="tab" href="#tab1">Dessert</a>
                 <a class="nav__link" data-toggle="tab" href="#tab2">Dinner</a>
                 <a class="nav__link" data-toggle="tab" href="#tab3">Dessert</a>
                 <a class="nav__link" data-toggle="tab" href="#tab4">Drinks</a>
@@ -183,60 +182,75 @@
                 <div class="tab-pane fade show active" id="tab1">
                   <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-6 menu-wrapper-inner">
-                      <div class="menu-item">
-                        <h4 class="menu__item-title">Smoked Meat Sandwich</h4>
+                      <div class="menu-item tab-1">
+                        <h4 class="menu__item-title">Orange Cake Recipe</h4>
                         <span class="pricing__tag">New</span>
-                        <span class="menu__item-price">$12.95</span>
-                        <p class="menu__item-desc">Baguette, basil, arugula, olives, cherry-tomatoes.</p>
+                        <span class="menu__item-price" ></span>
+                        <img src="assets/images/recette/OrangeCakeRecipe.png" alt="">
                       </div><!-- /.menu-item -->
-                      <div class="menu-item">
+                      {{-- <div class="menu-item">
                         <h4 class="menu__item-title">Salmon Sandwich</h4>
                         <span class="menu__item-price">$15.95</span>
                         <p class="menu__item-desc">Salmon, butter, lemon juice, onion, garlic & salad.</p>
-                      </div><!-- /.menu-item -->
-                      <div class="menu-item">
+                      </div><!-- /.menu-item --> --}}
+                      {{-- <div class="menu-item">
                         <h4 class="menu__item-title">Pan of Fried Eggs</h4>
                         <span class="pricing__tag">Recommended</span>
                         <span class="menu__item-price">$13.95</span>
                         <p class="menu__item-desc">Eggs, bacon and cherry-tomatoes with bread.</p>
-                      </div><!-- /.menu-item -->
-                      <div class="menu-item">
+                      </div><!-- /.menu-item --> --}}
+                      {{-- <div class="menu-item">
                         <h4 class="menu__item-title">Breakfast Set</h4>
                         <span class="menu__item-price">$20.95</span>
                         <p class="menu__item-desc">Croissants with strawberries, mascarpone, honey.</p>
-                      </div><!-- /.menu-item -->
-                      <div class="menu-item">
+                      </div><!-- /.menu-item --> --}}
+                      {{-- <div class="menu-item">
                         <h4 class="menu__item-title">Healthy Breakfast</h4>
                         <span class="menu__item-price">$18.95</span>
                         <p class="menu__item-desc">Oat granola with fresh blueberries, almond, yogurt.</p>
-                      </div><!-- /.menu-item -->
+                      </div><!-- /.menu-item --> --}}
                     </div><!-- /.col-lg-6 -->
                     <div class="col-sm-12 col-md-12 col-lg-6 menu-wrapper-inner">
                       <div class="menu-item">
-                        <h4 class="menu__item-title">Chicken Breast</h4>
-                        <span class="menu__item-price">$33.95</span>
-                        <p class="menu__item-desc">Paupiette of chicken, blue cheese, rosemary beans.</p>
+                        <h4 class="menu__item-title">Ingredients:</h4>
+                        {{-- <span class="menu__item-price">$33.95</span> --}}
+                        <p class="menu__item-desc">– 200g dark brown sugar
+                          – 4 eggs, separated
+                          – Zest of 2 oranges
+                          – Juice of 1 orange
+                          – 200g ground almonds
+                          
+                          For the syrup glaze
+                          – 130g caster sugar
+                          – Juice of 2 oranges
+                          – 1 cinnamon stick
+                          – 1 teaspoon orange essence or Cointreau</p>
                       </div><!-- /.menu-item -->
                       <div class="menu-item">
-                        <h4 class="menu__item-title">Salmon Steak</h4>
-                        <span class="menu__item-price">$41.95</span>
-                        <p class="menu__item-desc">Salmon, butter, lemon juice, onion, garlic & salad.</p>
+                        <h4 class="menu__item-title">Methode</h4>
+                        {{-- <span class="menu__item-price">$41.95</span> --}}
+                        <p class="menu__item-desc">1. Preheat the oven to 180°C/gas mark 4/350°F. Line a 22cm or 23cm round cake tin with parchment paper.
+                          2. Beat the brown sugar, egg yolks, orange zest and juice in a large mixing bowl until fluffy and yellow. Gradually beat in the ground almonds.
+                          3. In a separate spotlessly clean, dry bowl, beat the egg whites until soft peaks form. Gently fold the egg whites into the cake batter with a metal spoon.
+                          4. Spoon the batter into the lined cake tin. Bake for 40 minutes, until a toothpick inserted into the centre comes out clean and the cake is golden brown. Leave to rest on a wire rack in the tin until it’s cool.
+                          5. To make the glaze, simmer the caster sugar, orange juice and cinnamon stick in a saucepan for 5 minutes, until the sugar has dissolved.
+                          6. Remove from the heat and allow to cool, then add the orange essence or Cointreau. Pour the syrup over the lukewarm cake in its tin. Serve with vanilla ice cream or natural yoghurt.</p>
                       </div><!-- /.menu-item -->
-                      <div class="menu-item">
+                      {{-- <div class="menu-item">
                         <h4 class="menu__item-title">Chicken Crispy</h4>
                         <span class="menu__item-price">$33.95</span>
                         <p class="menu__item-desc">Smoked quail, crispy egg, spelt, girolles, parsley.</p>
-                      </div><!-- /.menu-item -->
-                      <div class="menu-item">
+                      </div><!-- /.menu-item --> --}}
+                      {{-- <div class="menu-item">
                         <h4 class="menu__item-title">Grilled Fillet</h4>
                         <span class="menu__item-price">$26.95</span>
                         <p class="menu__item-desc">Pork fillet, ginger, garlic, honey, pepper & canola oil.</p>
-                      </div><!-- /.menu-item -->
-                      <div class="menu-item">
+                      </div><!-- /.menu-item --> --}}
+                      {{-- <div class="menu-item">
                         <h4 class="menu__item-title">Salmon Steak</h4>
                         <span class="menu__item-price">$27.95</span>
                         <p class="menu__item-desc">Salmon, butter, lemon juice, onion, garlic & salad.</p>
-                      </div><!-- /.menu-item -->
+                      </div><!-- /.menu-item --> --}}
                     </div><!-- /.col-lg-6 -->
                   </div><!-- /.row  -->
                 </div><!-- /.tab  -->
