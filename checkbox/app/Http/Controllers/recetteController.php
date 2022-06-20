@@ -47,7 +47,7 @@ class recetteController extends Controller
      */
     public function store(Request $request)
     {
-        $ingredient =  implode(",",$request->input('ingredient'));
+        $ingredient =implode(",",$request->input('ingredient'));
       
         $data = DB::table('recettes')
         ->select("*")

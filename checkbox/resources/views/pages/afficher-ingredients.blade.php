@@ -137,7 +137,7 @@
                             name="ingredient[]" checked >
                           {{-- <h4 class="card-title"></h4> --}}
                          
-                          <span name="ingredient[]" value="{{$value->id_ingredient}}" >{{$value->name_ingredient}}</span>
+                          <span  value="{{$value->id_ingredient}}" >{{$value->name_ingredient}}</span>
                           
                           </label>
                           {{-- <label class="check">
