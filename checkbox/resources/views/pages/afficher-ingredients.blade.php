@@ -112,7 +112,7 @@
     =========================== -->
     <section id="contact" class="contact">
       
-          <div action=" {{route('recette.store')}}" method="post" class="row d-flex justify-content-center mt-100">
+          <div action="" method="post" class="row d-flex justify-content-center mt-100">
             
                   
             <div class="col-md-4">
@@ -131,15 +131,22 @@
 
 
 
-                          
+                          <form action="" method="POST">
                           <label class="check">
                             <input type="checkbox"
-                            name="ingredient[]">
-                          <h4 class="card-title"></h4>
+                            name="ingredient[]" checked >
+                          {{-- <h4 class="card-title"></h4> --}}
                          
-                          <span name="ingredients" value="{{$value->id_ingredient}}" >{{$value->name_ingredient}}</span>
+                          <span name="ingredient[]" value="{{$value->id_ingredient}}" >{{$value->name_ingredient}}</span>
                           
                           </label>
+                          {{-- <label class="check">
+                            <input type="checkbox" checked>
+                            <span>HTML</span>
+                          </label> --}}
+                         
+                         
+                        
                           @empty
                       
                           @endforelse
@@ -149,7 +156,10 @@
                     </div>
                   
           </div>
-
+          <div>
+            <button id="button">rechercher</button>
+          </div>
+        </form>
           {{-- <div class="row d-flex justify-content-center mt-100">
             <div class="col-md-4">
               <div class="card">

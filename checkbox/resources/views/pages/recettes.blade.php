@@ -116,7 +116,7 @@
               <img src="assets/images/shop/full/1.jpg" class="zoomin" alt="product">
             </div><!-- /.product-img -->
           </div><!-- /.col-lg-6 -->
-          @forelse ($recettes as $item)
+          @forelse ($data as $item)
           <div class="col-sm-12 col-md-6 col-lg-6">
             <h4 class="product__title">{{$item->nom_recette}}</h4>
             

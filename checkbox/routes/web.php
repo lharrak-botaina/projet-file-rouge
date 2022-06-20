@@ -3,6 +3,8 @@
 use App\Http\Controllers\ingredient_recetteController;
 use App\Http\Controllers\StockageController;
 use App\Http\Controllers\IngredientController;
+use App\Http\Controllers\recetteController;
+
 use Illuminate\Support\Facades\Route;
 use Database\Factories\AddIngredientFactory;
 use Database\Factories\CategorieFactory;
@@ -34,18 +36,18 @@ Route::get('/tableau-categorie', function () {
     });
 
 route::resource("ingredients",IngredientController::class);
-route::resource("recette",ingredient_recetteController::class);
-
+route::resource("recette",recetteController::class);
+// route::get("/recette",[recetteController::class,"index"]);
 Route::resource('afficher-ingredient',AddIngredientController::class);
 Route::resource('afficher-categorie', CategorieController::class);
 
 // route::resource("stock",StockageController::class);
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+// Route::middleware([
+//     'auth:sanctum',
+//     config('jetstream.auth_session'),
+//     'verified'
+// ])->group(function () {
+//     Route::get('/dashboard', function () {
+//         return view('dashboard');
+//     })->name('dashboard');
+// });

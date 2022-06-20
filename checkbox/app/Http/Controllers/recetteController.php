@@ -3,17 +3,30 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class recetteController extends Controller
 {
+
+
+    
+    
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $ingredient =  implode(",",$request->input('ingredient'));
+      
+        $data = DB::table('recettes')
+        ->select("*")
+        // ->where("ingredients",$ingredient)
+        ->get();
+
+        return view("pages.recettes",compact('data'));
+
     }
 
     /**
@@ -34,7 +47,15 @@ class recetteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $ingredient =  implode(",",$request->input('ingredient'));
+      
+        $data = DB::table('recettes')
+        ->select("*")
+        ->where("ingredients",$ingredient)
+        ->get();
+
+        return view("pages.recettes",compact('data'));
+
     }
 
     /**
