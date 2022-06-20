@@ -41,8 +41,10 @@
                     </a>
                     <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link" href="{{route('afficher-categorie.index')}}">Tableau des endroits</a>
-                            <a class="nav-link" href="{{route('afficher-ingredient.index')}}">Tableau des categorie</a>
+                            <a class="nav-link" href="{{route('afficher-categorie.index')}}">Tableau des categories</a>
+                            <a class="nav-link" href="{{route('afficher-ingredient.index')}}">Tableau des ingredients</a>
+                            <a class="nav-link" href="{{route('afficher-recette.index')}}">Tableau des recettes</a>
+
                         </nav>
                     </div>
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -54,6 +56,8 @@
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="{{route('afficher-categorie.create')}}">Ajouter  categorie</a>
                                     <a class="nav-link" href="{{route('afficher-ingredient.create')}}">Ajouter ingredient</a>
+                                    <a class="nav-link" href="{{route('afficher-recette.create')}}">Ajouter recette</a>
+
                                 </nav>
                                
                             </a>

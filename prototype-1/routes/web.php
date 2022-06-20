@@ -5,6 +5,7 @@ use App\Http\Controllers\IngredientsController;
 use App\Http\Controllers\Controller;
 use Database\Factories\IngredientFactory;
 use App\Http\Controllers\CategorieController;
+use App\Http\Controllers\RecetteContoller;
 
 use Illuminate\Support\Facades\Route;
 
@@ -54,4 +55,5 @@ Route::get('/tableau-categorie', function () {
    
 Route::resource('afficher-ingredient',IngredientsController::class);
 Route::resource('afficher-categorie', CategorieController::class);
+Route::resource('afficher-recette', RecetteContoller::class);
 
