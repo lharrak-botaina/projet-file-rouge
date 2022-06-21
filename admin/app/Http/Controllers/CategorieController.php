@@ -52,10 +52,10 @@ class CategorieController extends Controller
     {
         $name_categorie = $request->input('name_categorie');
         
-        $id_ingredient= $request->input('id_ingredient');
+        // $id_ingredient= $request->input('id_ingredient');
       
         
-         $inserte = DB::insert('insert into categorie(name,id_categorie_ingredients) value(?,?)',[$name_categorie,$id_ingredient]);
+         $inserte = DB::insert('insert into categorie(name) value(?)',[$name_categorie]);
          if($inserte){
           return redirect('afficher-categorie');
           

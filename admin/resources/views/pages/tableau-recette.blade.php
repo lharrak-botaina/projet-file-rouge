@@ -2,9 +2,9 @@
 @section('content')
 
 <div class="container-fluid px-4">
-    <h1 class="mt-4">Tableau des ingredient</h1>
+    <h1 class="mt-4">Tableau des recettes</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item"><a href="{{route('afficher-recette.create')}}">Ajouter ingredient</a></li>
+        <li class="breadcrumb-item"><a href="{{route('afficher-recette.create')}}">Ajouter recette</a></li>
         <li class="breadcrumb-item active">Tables</li>
     </ol>
     

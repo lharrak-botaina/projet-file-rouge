@@ -1,6 +1,6 @@
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     <!-- Navbar Brand-->
-    <a class="navbar-brand ps-3" href="index.html">Lharrak botaina</a>
+    <a class="navbar-brand ps-3" href="index.html"><img src="assets/images/logo/logo-light.png" alt=""></a>
     <!-- Sidebar Toggle-->
     <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
     <!-- Navbar Search-->
@@ -65,17 +65,17 @@
                            
                         
                     </div>
-                    <div class="sb-sidenav-menu-heading">Addons</div>
+                    {{-- <div class="sb-sidenav-menu-heading">Addons</div>
                     <a class="nav-link" href="charts.html">
                         <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                         Charts
-                    </a>
+                    </a> --}}
                    
                 </div>
             </div>
             <div class="sb-sidenav-footer">
                 <div class="small">Logged in as:</div>
-                Start Bootstrap
+                lharrak botaina
             </div>
         </nav>
     </div>

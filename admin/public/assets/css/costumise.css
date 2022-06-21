@@ -79,3 +79,9 @@ label.check input:checked + span {
     justify-content:flex-start;
     
 }
+.tab-1-img{
+  /* display: flex;
+  flex-direction: column; */
+  width: 300px !important;
+  max-width: 55% !important;
+}

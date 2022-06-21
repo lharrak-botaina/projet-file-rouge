@@ -2,6 +2,8 @@
 
 
 use App\Http\Controllers\IngredientsController;
+use App\Http\Controllers\IngredwebContoller;
+use App\Http\Controllers\RecettewebController;
 use App\Http\Controllers\Controller;
 use Database\Factories\IngredientFactory;
 use App\Http\Controllers\CategorieController;
@@ -19,9 +21,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/index', function () {  
-    return view('index');
-    });
+// Route::get('/index', function () {  
+//     return view('index');
+//     });
 Route::get('/checkbox', function () {  
 return view('checkbox');
 });
@@ -49,10 +51,15 @@ Route::get('/inserte-categorie', function () {
 Route::get('/tableau-categorie', function () {  
     return view('pages.tableau-categorie');
     });
+    Route::get('/index', function () {
+        return view('pages.index');
+    });
+    
 
 
 // route::get('/afficher',[CategorieController::class,'index']);
-   
+route::resource("ingredients",IngredwebContoller::class);
+route::resource("recette",RecettewebController::class);
 Route::resource('afficher-ingredient',IngredientsController::class);
 Route::resource('afficher-categorie', CategorieController::class);
 Route::resource('afficher-recette', RecetteContoller::class);
